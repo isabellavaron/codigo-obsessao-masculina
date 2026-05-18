@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Código da Obsessão Masculina — Acesso Imediato</title>
+<meta name="description" content="Descubra os segredos da mente masculina e se torne a mulher que ele não consegue tirar da cabeça.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--p:#080808;--p2:#0F0F0F;--p3:#161616;--p4:#1C1C1C;--g:#C9A84C;--gl:#E8C96A;--gd:#8B6914;--r:#C0392B;--w:#fff;--muted:#666;--light:#aaa;--mid:#ccc}
+body{font-family:Georgia,serif;background:var(--p);color:var(--mid);margin:0}
+.pg{max-width:680px;margin:0 auto;background:var(--p)}
+
+.ticker{background:var(--r);padding:8px 0;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:tick 22s linear infinite;font-family:'Helvetica Neue',sans-serif;font-size:11px;font-weight:600;color:#fff;letter-spacing:0.1em}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.nav{background:var(--p);border-bottom:1px solid #1A1A1A;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.nav-logo{font-size:12px;font-weight:700;color:var(--g);letter-spacing:0.15em;text-transform:uppercase;font-family:'Helvetica Neue',sans-serif}
+.nav-cta{background:var(--g);color:var(--p);font-family:'Helvetica Neue',sans-serif;font-size:11px;font-weight:700;padding:8px 18px;border:none;cursor:pointer;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;display:inline-block}
+.nav-cta:hover{background:var(--gl)}
+
+.hero{background:var(--p);padding:64px 24px 56px;text-align:center;border-bottom:1px solid #1A1A1A;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:300px;height:1px;background:var(--g);opacity:0.4}
+.hero-kicker{font-family:'Helvetica Neue',sans-serif;font-size:10px;font-weight:600;color:var(--g);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:12px}
+.hero-kicker::before,.hero-kicker::after{content:'';width:32px;height:1px;background:var(--gd)}
+.hero-h1{font-size:34px;font-weight:700;color:var(--w);line-height:1.2;margin-bottom:16px}
+.hero-h1 em{color:var(--g);font-style:normal;display:block}
+.hero-rule{width:48px;height:1px;background:var(--g);margin:20px auto}
+.hero-lead{font-family:'Helvetica Neue',sans-serif;font-size:15px;color:#999;line-height:1.9;max-width:480px;margin:0 auto 36px}
+.hero-lead strong{color:var(--w)}
+
+.hero-terminal{background:var(--p2);border:1px solid #222;padding:16px 20px;margin:0 auto 36px;max-width:480px;text-align:left;font-family:'Courier New',monospace;font-size:12px}
+.term-bar{display:flex;align-items:center;gap:6px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #222}
+.term-dot{width:8px;height:8px;border-radius:50%}
+.term-line{color:#444;margin-bottom:4px;line-height:1.6}
+.term-line .g{color:var(--g)}
+.term-line .v{color:#7EC8A0}
+.term-line .dim{color:#333}
+
+.btn-main{display:block;background:var(--g);color:var(--p);border:none;padding:18px 32px;font-family:'Helvetica Neue',sans-serif;font-size:14px;font-weight:700;cursor:pointer;letter-spacing:0.08em;text-transform:uppercase;max-width:440px;margin:0 auto;text-decoration:none;text-align:center}
+.btn-main:hover{background:var(--gl)}
+.btn-ghost{display:block;background:transparent;color:var(--g);border:1px solid var(--gd);padding:12px 32px;font-family:'Helvetica Neue',sans-serif;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:0.1em;text-transform:uppercase;max-width:440px;margin:10px auto 0;text-decoration:none;text-align:center}
+.hero-micro{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);margin-top:14px;letter-spacing:0.05em;text-align:center}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #1A1A1A}
+.stat{padding:28px 16px;text-align:center;border-right:1px solid #1A1A1A}
+.stat:last-child{border-right:none}
+.stat-num{font-size:26px;font-weight:700;color:var(--g);margin-bottom:4px}
+.stat-label{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);letter-spacing:0.05em;text-transform:uppercase}
+
+.sec{padding:48px 24px;border-bottom:1px solid #1A1A1A}
+.sec-kicker{font-family:'Helvetica Neue',sans-serif;font-size:10px;font-weight:600;color:var(--g);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.sec-kicker::after{content:'';flex:1;height:1px;background:#1A1A1A}
+.h2{font-size:26px;font-weight:700;color:var(--w);line-height:1.25;margin-bottom:8px}
+.h2 em{color:var(--g);font-style:normal}
+.lead{font-family:'Helvetica Neue',sans-serif;font-size:14px;color:#888;line-height:1.85;margin-bottom:20px}
+.lead strong{color:var(--mid)}
+
+.dor-item{border-left:1px solid var(--r);padding:12px 16px;margin:6px 0;background:#0D0505;font-family:'Helvetica Neue',sans-serif;font-size:13px;color:#bbb;line-height:1.65;display:flex;gap:10px;align-items:flex-start}
+.dor-x{color:var(--r);flex-shrink:0;font-size:15px;margin-top:1px}
+
+.revelation{border:1px solid var(--gd);padding:32px 24px;margin:28px 0;text-align:center;background:var(--p2);position:relative}
+.revelation::before,.revelation::after{content:'◆';color:var(--gd);font-size:10px;position:absolute;top:-6px}
+.revelation::before{left:24px}
+.revelation::after{right:24px}
+.rev-quote{font-size:20px;font-weight:700;color:var(--g);line-height:1.45;margin-bottom:8px;font-style:italic}
+.rev-sub{font-family:'Helvetica Neue',sans-serif;font-size:12px;color:var(--muted);letter-spacing:0.05em}
+
+.socos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#1A1A1A;border:1px solid #1A1A1A;margin:20px 0}
+.soco{background:var(--p2);padding:24px 20px;text-align:center}
+.soco-title{font-size:15px;font-weight:700;color:var(--w);margin-bottom:8px}
+.soco-sub{font-family:'Helvetica Neue',sans-serif;font-size:12px;color:var(--muted);line-height:1.6}
+
+.check-item{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #141414;font-family:'Helvetica Neue',sans-serif;font-size:13px;color:#bbb;line-height:1.5}
+.check-item:last-child{border-bottom:none}
+.chk{color:var(--g);flex-shrink:0;font-size:15px;margin-top:1px}
+
+.cap{border:1px solid #1A1A1A;margin-bottom:6px;background:var(--p2)}
+.cap-h{padding:14px 16px;display:flex;gap:12px;align-items:center;border-bottom:1px solid #141414}
+.cap-num{background:var(--g);color:var(--p);font-family:'Helvetica Neue',sans-serif;font-size:9px;font-weight:700;padding:3px 8px;letter-spacing:0.12em;text-transform:uppercase;flex-shrink:0}
+.cap-name{font-family:'Helvetica Neue',sans-serif;font-size:13px;font-weight:600;color:#ddd}
+.cap-body{padding:14px 16px;font-family:'Helvetica Neue',sans-serif;font-size:13px;color:#777;line-height:1.7}
+.cap-hook{font-size:12px;color:var(--gd);margin-top:8px;font-style:italic}
+
+.author-block{border:1px solid #1A1A1A;padding:28px 24px;background:var(--p2);margin:20px 0}
+.author-top{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+.author-avatar{width:56px;height:56px;border-radius:50%;border:1px solid var(--gd);background:var(--p3);display:flex;align-items:center;justify-content:center;color:var(--g);font-size:22px;font-weight:700;flex-shrink:0;font-family:'Helvetica Neue',sans-serif}
+.author-name{font-size:17px;font-weight:700;color:var(--w);margin-bottom:2px}
+.author-title{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--gd);letter-spacing:0.1em;text-transform:uppercase}
+.author-bio{font-family:'Helvetica Neue',sans-serif;font-size:13px;color:#888;line-height:1.85}
+.author-bio strong{color:var(--mid)}
+
+.tcard{border:1px solid #1A1A1A;padding:22px;margin-bottom:8px;background:var(--p2)}
+.tstars{color:var(--g);font-size:13px;letter-spacing:3px;margin-bottom:10px}
+.ttext{font-size:13px;color:#bbb;line-height:1.85;font-style:italic;margin-bottom:14px}
+.ttext strong{color:var(--g);font-style:normal}
+.tauth{display:flex;align-items:center;gap:10px;font-family:'Helvetica Neue',sans-serif}
+.tavatar{width:34px;height:34px;border-radius:50%;border:1px solid var(--gd);background:var(--p3);color:var(--g);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tname{font-size:12px;font-weight:600;color:#ccc}
+.tcity{font-size:11px;color:var(--muted)}
+.tresult{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--g);border:1px solid var(--gd);padding:3px 10px;display:inline-block;margin-top:10px;letter-spacing:0.05em}
+
+.price-sec{background:var(--p);border-top:1px solid var(--gd);border-bottom:1px solid var(--gd);padding:48px 24px;text-align:center}
+.price-alerta{background:#0D0000;border:1px solid #3A0000;padding:14px 18px;font-family:'Helvetica Neue',sans-serif;font-size:12px;color:#ff7070;margin-bottom:28px;line-height:1.7;letter-spacing:0.02em}
+.bonus-kicker{font-family:'Helvetica Neue',sans-serif;font-size:10px;font-weight:600;color:var(--g);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:10px}
+.bonus-kicker::before,.bonus-kicker::after{content:'';width:24px;height:1px;background:var(--gd)}
+.bonus-item{border:1px solid #1A1A1A;padding:14px 16px;margin-bottom:6px;text-align:left;display:flex;gap:14px;align-items:center;background:var(--p2)}
+.bonus-icon{color:var(--g);font-size:22px;flex-shrink:0}
+.bonus-txt{font-family:'Helvetica Neue',sans-serif;font-size:12px;color:#888;line-height:1.5}
+.bonus-txt strong{color:#ccc}
+.price-divider{width:48px;height:1px;background:var(--gd);margin:28px auto 20px}
+.price-de{font-family:'Helvetica Neue',sans-serif;font-size:13px;color:#444;text-decoration:line-through;letter-spacing:0.05em;margin-bottom:4px}
+.price-val{font-size:60px;font-weight:700;color:var(--g);line-height:1}
+.price-parcel{font-family:'Helvetica Neue',sans-serif;font-size:12px;color:var(--muted);margin-top:6px;margin-bottom:32px;letter-spacing:0.05em}
+.guarantee{border:1px solid var(--gd);padding:18px 20px;margin:20px auto;display:flex;gap:14px;align-items:flex-start;text-align:left;max-width:480px}
+.gtitle{font-family:'Helvetica Neue',sans-serif;font-size:13px;font-weight:700;color:#ddd;margin-bottom:4px}
+.gtext{font-family:'Helvetica Neue',sans-serif;font-size:12px;color:var(--muted);line-height:1.7}
+.trust{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.trust span{font-family:'Helvetica Neue',sans-serif;font-size:10px;color:#444;display:flex;align-items:center;gap:5px;letter-spacing:0.1em;text-transform:uppercase}
+
+.faq-item{padding:18px 0;border-bottom:1px solid #141414}
+.faq-item:last-child{border-bottom:none}
+.faq-num{font-family:'Helvetica Neue',sans-serif;font-size:10px;color:var(--gd);letter-spacing:0.1em;margin-bottom:5px}
+.faq-q{font-family:'Helvetica Neue',sans-serif;font-size:14px;font-weight:600;color:#ccc;margin-bottom:6px}
+.faq-a{font-family:'Helvetica Neue',sans-serif;font-size:13px;color:var(--muted);line-height:1.8}
+
+.final{background:var(--p2);border-top:1px solid var(--gd);padding:56px 24px;text-align:center}
+.final-h{font-size:24px;font-weight:700;color:var(--w);line-height:1.35;margin-bottom:12px}
+.final-h em{color:var(--g);font-style:normal}
+.final-p{font-family:'Helvetica Neue',sans-serif;font-size:14px;color:#777;line-height:1.9;margin-bottom:32px;max-width:440px;margin-left:auto;margin-right:auto}
+.final-micro{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);margin-top:16px;letter-spacing:0.05em}
+.footer{background:var(--p);border-top:1px solid #141414;padding:20px 24px;text-align:center;font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);letter-spacing:0.05em}
+</style>
+</head>
+<body>
+<div class="pg">
+
+<!-- TICKER -->
+<div class="ticker">
+  <span class="ticker-inner">
+    ★ MAIS DE 3.000 MULHERES TRANSFORMADAS &nbsp;&nbsp; ◆ &nbsp;&nbsp; ACESSO IMEDIATO APÓS O PAGAMENTO &nbsp;&nbsp; ◆ &nbsp;&nbsp; GARANTIA INCONDICIONAL DE 7 DIAS &nbsp;&nbsp; ◆ &nbsp;&nbsp; ★ MAIS DE 3.000 MULHERES TRANSFORMADAS &nbsp;&nbsp; ◆ &nbsp;&nbsp; ACESSO IMEDIATO APÓS O PAGAMENTO &nbsp;&nbsp; ◆ &nbsp;&nbsp; GARANTIA INCONDICIONAL DE 7 DIAS &nbsp;&nbsp; ◆ &nbsp;&nbsp;
+  </span>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-logo">O Código da Obsessão Masculina</div>
+  <a href="https://pay.hotmart.com/V105858182P" class="nav-cta">Quero acesso →</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-kicker">e-book digital exclusivo</div>
+  <h1 class="hero-h1">
+    Pare de ser ignorada.<br>
+    <em>Comece a ser obsessão.</em>
+  </h1>
+  <div class="hero-rule"></div>
+  <p class="hero-lead">O manual que revela os segredos da mente masculina que <strong>eles nunca teriam coragem de te contar</strong> — e como usá-los para se tornar a mulher que ele não consegue tirar da cabeça.</p>
+
+  <div class="hero-terminal">
+    <div class="term-bar">
+      <div class="term-dot" style="background:#ff5f57"></div>
+      <div class="term-dot" style="background:#febc2e"></div>
+      <div class="term-dot" style="background:#28c840"></div>
+      <span style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:#444;margin-left:8px">resultado · após a leitura</span>
+    </div>
+    <div class="term-line"><span class="g">$</span> mulher --status --after-reading</div>
+    <div class="term-line" style="margin-top:8px"><span class="v">▸ atração</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; criada sem esforço aparente &nbsp;&nbsp; <span style="color:var(--g)">●</span></div>
+    <div class="term-line"><span class="v">▸ comunicação</span> &nbsp; poder de influência ativo &nbsp;&nbsp;&nbsp; <span style="color:var(--g)">●</span></div>
+    <div class="term-line"><span class="v">▸ intimidade</span> &nbsp;&nbsp;&nbsp; bloqueios eliminados &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:var(--g)">●</span></div>
+    <div class="term-line"><span class="v">▸ relacionamento</span> &nbsp;ele não vai a lugar algum &nbsp;&nbsp;&nbsp; <span style="color:var(--g)">●</span></div>
+    <div class="term-line" style="margin-top:10px" class="dim">// padrão anterior: ciclos de abandono recorrentes</div>
+    <div class="term-line dim">// padrão atual: &nbsp;&nbsp;&nbsp; escolhida. desejada. respeitada.</div>
+  </div>
+
+  <a href="https://pay.hotmart.com/V105858182P" class="btn-main">QUERO SER IRRESISTÍVEL AGORA →</a>
+  <a href="#conteudo" class="btn-ghost">ver o que está dentro do e-book</a>
+  <p class="hero-micro">✓ ACESSO IMEDIATO &nbsp;·&nbsp; ✓ LEIA NO CELULAR &nbsp;·&nbsp; ✓ GARANTIA DE 7 DIAS &nbsp;·&nbsp; ✓ PAGAMENTO SEGURO</p>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-num">3.000+</div><div class="stat-label">mulheres transformadas</div></div>
+  <div class="stat"><div class="stat-num">★ 4.9</div><div class="stat-label">avaliação média</div></div>
+  <div class="stat"><div class="stat-num">7 dias</div><div class="stat-label">garantia total</div></div>
+</div>
+
+<!-- DOR -->
+<div class="sec">
+  <div class="sec-kicker">a verdade que ninguém te conta</div>
+  <h2 class="h2">Por que os homens <em>somem sem explicação</em> — mesmo quando você fez tudo certo?</h2>
+  <p class="lead">Não é falta de beleza. Não é falta de carinho. <strong>É porque ninguém nunca te ensinou como a mente de um homem realmente funciona.</strong> E sem esse conhecimento, você repete os mesmos erros, nos mesmos relacionamentos, com os mesmos finais.</p>
+  <div class="dor-item"><span class="dor-x">✕</span>Você se entrega completamente e ele some sem dar satisfação — e você fica sem entender absolutamente nada.</div>
+  <div class="dor-item"><span class="dor-x">✕</span>Já perdeu homens para mulheres que faziam metade do que você fazia por eles.</div>
+  <div class="dor-item"><span class="dor-x">✕</span>Na intimidade, nunca tem certeza se está agradando de verdade — e isso te corrói por dentro.</div>
+  <div class="dor-item"><span class="dor-x">✕</span>O tempo passa, o medo de ficar sozinha aumenta — e isso te faz tomar decisões erradas.</div>
+  <div class="dor-item"><span class="dor-x">✕</span>Todo relacionamento começa bem e termina do mesmo jeito. Você não sabe como quebrar esse ciclo.</div>
+  <div class="revelation">
+    <div class="rev-quote">"Isso não é azar.<br>É um padrão. E todo padrão pode ser reescrito."</div>
+    <div class="rev-sub">este e-book vai te mostrar exatamente como fazer isso — capítulo por capítulo</div>
+  </div>
+</div>
+
+<!-- SOCOS -->
+<div class="socos">
+  <div class="soco"><div class="soco-title">Atrai todo dia.</div><div class="soco-sub">Sem depender de sorte ou do momento certo.</div></div>
+  <div class="soco"><div class="soco-title">Ele não some.</div><div class="soco-sub">Porque você sabe exatamente o que mantém o interesse vivo.</div></div>
+  <div class="soco"><div class="soco-title">Intimidade real.</div><div class="soco-sub">Sem bloqueios. Sem insegurança. Sem fingir.</div></div>
+  <div class="soco"><div class="soco-title">Você escolhe.</div><div class="soco-sub">Menos sofrimento — porque você parou de depender da sorte.</div></div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="sec" id="conteudo">
+  <div class="sec-kicker">dentro do e-book</div>
+  <h2 class="h2">Os <em>5 capítulos</em> que vão mudar tudo</h2>
+  <p class="lead">Cada capítulo resolve uma camada do problema. Quando eles se conectam, a transformação é total.</p>
+  <div class="cap"><div class="cap-h"><span class="cap-num">Cap. I</span><span class="cap-name">Você se considera uma mulher fascinante?</span></div><div class="cap-body">Descubra sua exuberância única e como usá-la como arma. Entenda como os homens realmente percebem a beleza — e pare de se destruir com detalhes que só existem na sua cabeça.<div class="cap-hook">→ A mulher que se conhece não precisa competir com ninguém.</div></div></div>
+  <div class="cap"><div class="cap-h"><span class="cap-num">Cap. II</span><span class="cap-name">Comunicação e poder intelectual</span></div><div class="cap-body">A mulher que sabe falar, ouvir e se posicionar tem poder ilimitado. Aprenda as técnicas que criam conexão profunda e atração duradoura — sem jogo, sem falsidade.<div class="cap-hook">→ A voz certa, no momento certo, muda tudo.</div></div></div>
+  <div class="cap"><div class="cap-h"><span class="cap-num">Cap. III</span><span class="cap-name">Como se tornar uma deusa na cama</span></div><div class="cap-body">O capítulo que toda mulher precisa ler. Quebre bloqueios, elimine inseguranças e descubra o que os homens realmente desejam na intimidade. Sem tabus. Sem julgamento.<div class="cap-hook">→ Quando você se liberta, ele nunca mais quer ir embora.</div></div></div>
+  <div class="cap"><div class="cap-h"><span class="cap-num">Cap. IV</span><span class="cap-name">Seja a mulher que o homem ideal espera</span></div><div class="cap-body">Mergulhe fundo na psicologia masculina. Entenda o que um homem de valor busca em uma parceira e como você pode ser exatamente essa mulher — sem abrir mão de quem você é.<div class="cap-hook">→ O homem certo não precisa ser convencido. Ele reconhece.</div></div></div>
+  <div class="cap"><div class="cap-h"><span class="cap-num">Cap. V</span><span class="cap-name">As artes de enfeitiçar um homem</span></div><div class="cap-body">As estratégias comportamentais, instintivas e emocionais mais poderosas do jogo da sedução. Faça o homem que você quer ficar completamente obcecado por você — de forma natural e genuína.<div class="cap-hook">→ A última peça. A mais poderosa. A que conecta todas as outras.</div></div></div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="sec">
+  <div class="sec-kicker">o que você vai dominar</div>
+  <h2 class="h2">Tudo que você vai <em>aprender e aplicar</em></h2>
+  <div style="margin-top:16px">
+    <div class="check-item"><span class="chk">✓</span>Os segredos da psicologia masculina que os homens nunca revelariam por conta própria.</div>
+    <div class="check-item"><span class="chk">✓</span>Como criar atração física e emocional de forma natural — sem parecer desesperada.</div>
+    <div class="check-item"><span class="chk">✓</span>As técnicas de comunicação que criam conexão profunda e fazem ele querer estar sempre perto de você.</div>
+    <div class="check-item"><span class="chk">✓</span>Como se tornar inesquecível na intimidade e fazer ele nunca mais querer ir embora.</div>
+    <div class="check-item"><span class="chk">✓</span>O perfil exato do que um homem de valor procura — e como ser essa mulher sem fingir.</div>
+    <div class="check-item"><span class="chk">✓</span>Como quebrar padrões destrutivos que sabotam todo relacionamento antes mesmo de começar.</div>
+    <div class="check-item"><span class="chk">✓</span>As estratégias para criar obsessão saudável — e fazer ele escolher você todos os dias.</div>
+  </div>
+</div>
+
+<!-- AUTORA -->
+<div class="sec">
+  <div class="sec-kicker">quem escreveu</div>
+  <h2 class="h2">Escrito por quem <em>viveu antes de ensinar</em></h2>
+  <div class="author-block">
+    <div class="author-top">
+      <div class="author-avatar">A</div>
+      <div>
+        <div class="author-name">A Autora</div>
+        <div class="author-title">especialista em relacionamentos femininos</div>
+      </div>
+    </div>
+    <div class="author-bio">
+      Este e-book não foi escrito de teoria. Foi escrito de <strong>experiência real</strong> — de quem passou pelos mesmos ciclos de abandono, pelas mesmas noites sem resposta, pelos mesmos relacionamentos que terminavam sem explicação.<br><br>
+      Foram anos estudando psicologia masculina, comportamento humano e os padrões que separam as mulheres que são escolhidas das que ficam esperando. <strong>O que está aqui foi testado, vivido e comprovado.</strong><br><br>
+      Não é mais um livro de autoajuda. É um manual de operação — para a mulher que decidiu parar de depender da sorte.
+    </div>
+  </div>
+</div>
+
+<!-- DEPOIMENTOS -->
+<div class="sec">
+  <div class="sec-kicker">resultados reais</div>
+  <h2 class="h2">Mulheres que <em>reescreveram sua história</em></h2>
+  <div style="margin-top:20px">
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"Eu tinha um padrão destruidor: me apaixonava, me entregava demais e o homem sumia. Li o capítulo IV e entendi exatamente o que eu estava fazendo de errado. <strong>Em três semanas, meu relacionamento mudou completamente.</strong> Ele me olha com outros olhos — eu mudei."</p><div class="tauth"><div class="tavatar">C</div><div><div class="tname">Camila R., 34 anos — São Paulo, SP</div><div class="tcity">comprou há 2 meses</div></div></div><div class="tresult">resultado: relacionamento estabilizado em 3 semanas</div></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"O capítulo III me libertou de uma vez por todas. Eu tinha tanto bloqueio que nem consigo descrever. <strong>Hoje me sinto desejada, no controle e completamente confiante.</strong> Meu marido não acredita na transformação."</p><div class="tauth"><div class="tavatar">F</div><div><div class="tname">Fernanda L., 29 anos — Belo Horizonte, MG</div><div class="tcity">comprou há 5 semanas</div></div></div><div class="tresult">resultado: bloqueios eliminados · confiança reconstruída</div></div>
+    <div class="tcard"><div class="tstars">★★★★★</div><p class="ttext">"Comprei sem expectativa. Pensei que seria mais do mesmo. <strong>Foi um soco na realidade.</strong> Ninguém nunca tinha me explicado como os homens pensam de forma tão honesta e direta. Recomendo para toda mulher que quer parar de sofrer."</p><div class="tauth"><div class="tavatar">J</div><div><div class="tname">Juliana M., 41 anos — Rio de Janeiro, RJ</div><div class="tcity">comprou há 3 meses</div></div></div><div class="tresult">resultado: padrão de abandono quebrado definitivamente</div></div>
+  </div>
+</div>
+
+<!-- PRICE -->
+<div class="price-sec" id="comprar">
+  <div class="price-alerta">⚠ ATENÇÃO — Esta oferta é por tempo limitado. O preço pode voltar a R$ 97,00 a qualquer momento. Não feche esta página sem garantir o seu acesso.</div>
+  <div class="bonus-kicker">bônus exclusivos incluídos</div>
+  <div class="bonus-item"><span class="bonus-icon">🎁</span><div class="bonus-txt"><strong>Guia: 21 Frases que Despertam Obsessão Masculina</strong><br>PDF enviado junto com o e-book. Valor real: R$ 37,00 — hoje incluso sem custo adicional.</div></div>
+  <div class="bonus-item"><span class="bonus-icon">💬</span><div class="bonus-txt"><strong>Script: O que dizer nas primeiras 24h para ele não te esquecer</strong><br>Bônus surpresa exclusivo para quem comprar hoje.</div></div>
+  <div class="bonus-item"><span class="bonus-icon">🧠</span><div class="bonus-txt"><strong>Mapa Mental: Os 7 Gatilhos da Mente Masculina</strong><br>Visual rápido para consultar sempre que precisar.</div></div>
+  <div class="price-divider"></div>
+  <div class="price-de">DE R$ 97,00</div>
+  <div class="price-val"><sup style="font-size:20px;color:#888;font-weight:400;vertical-align:top;margin-top:14px;display:inline-block">R$</sup>27<span style="font-size:24px;color:#555">,00</span></div>
+  <div class="price-parcel">OU 3X DE R$ 9,90 NO CARTÃO · SEM JUROS</div>
+  <a href="https://pay.hotmart.com/V105858182P" class="btn-main">SIM — QUERO ACESSO IMEDIATO POR R$ 27 →</a>
+  <div class="guarantee">
+    <span style="font-size:28px;color:var(--g);flex-shrink:0">🛡</span>
+    <div><div class="gtitle">Garantia incondicional de 7 dias</div><div class="gtext">Não ficou satisfeita por qualquer motivo? Envie um e-mail em até 7 dias e devolvemos 100% do seu dinheiro. Sem burocracia. Sem perguntas. O risco é 100% nosso.</div></div>
+  </div>
+  <div class="trust">
+    <span>🔒 PAGAMENTO SEGURO</span>
+    <span>📱 LEIA NO CELULAR</span>
+    <span>⚡ ACESSO EM 2 MIN</span>
+    <span>∞ ACESSO VITALÍCIO</span>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="sec">
+  <div class="sec-kicker">dúvidas frequentes</div>
+  <h2 class="h2" style="font-size:20px">Tudo que você precisa saber</h2>
+  <div style="margin-top:8px">
+    <div class="faq-item"><div class="faq-num">01</div><div class="faq-q">Como recebo o e-book após a compra?</div><div class="faq-a">Imediatamente após a confirmação do pagamento, você recebe o link de acesso no e-mail cadastrado. Funciona em qualquer dispositivo — celular, tablet ou computador.</div></div>
+    <div class="faq-item"><div class="faq-num">02</div><div class="faq-q">Quais são as formas de pagamento?</div><div class="faq-a">Cartão de crédito em até 3x sem juros, cartão de débito, PIX e boleto bancário. O pagamento é processado com total segurança pela Hotmart.</div></div>
+    <div class="faq-item"><div class="faq-num">03</div><div class="faq-q">E se eu não gostar do conteúdo?</div><div class="faq-a">Você tem 7 dias de garantia total e incondicional. Se não ficar satisfeita por qualquer motivo, devolvemos 100% do valor pago. Sem questionamentos, sem burocracia.</div></div>
+    <div class="faq-item"><div class="faq-num">04</div><div class="faq-q">Por quanto tempo terei acesso?</div><div class="faq-a">Para sempre. O e-book é seu. Baixe, salve e leia quando e quantas vezes quiser — sem prazo de validade.</div></div>
+    <div class="faq-item"><div class="faq-num">05</div><div class="faq-q">Este e-book funciona para quem já está em um relacionamento?</div><div class="faq-a">Sim. As técnicas funcionam tanto para conquistar quanto para fortalecer e reacender um relacionamento existente — inclusive os que parecem estar esfriando.</div></div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final">
+  <h2 class="final-h">Você merece ser <em>amada,<br>desejada e escolhida</em> — todos os dias.</h2>
+  <p class="final-p">Cada dia sem esse conhecimento é mais um dia repetindo os mesmos padrões. Você já sabe o que não funciona. Agora é hora de aprender o que funciona.</p>
+  <a href="https://pay.hotmart.com/V105858182P" class="btn-main">QUERO MUDAR MINHA HISTÓRIA AGORA →</a>
+  <p class="final-micro">R$ 27,00 · pagamento único · acesso imediato · garantia de 7 dias</p>
+</div>
+
+<div class="footer">© 2025 O Código da Obsessão Masculina · Todos os direitos reservados · Pagamento processado com segurança pela Hotmart</div>
+
+</div>
+<script>
+const el = document.querySelector('.ticker-inner');
+let pos = 0;
+</script>
+</body>
+</html>
